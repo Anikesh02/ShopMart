@@ -29,8 +29,7 @@ const Header = () => {
           <div className="logo">
             <img src={logo} alt='logo' />
             <div>
-              <h1>ShopQ</h1>
-              <p>Since 2024</p>
+              <h1>ShopMart</h1>
             </div>
           </div>
 

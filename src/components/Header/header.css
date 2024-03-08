@@ -29,9 +29,7 @@
     color: var(--primary-color);
 }
 
-p{
-    display: none;
-}
+
 
 .menu{
     display: flex;
