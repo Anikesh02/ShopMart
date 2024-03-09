@@ -1,4 +1,4 @@
-import Reac, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect} from 'react'
 import './header.css'
 import logo from '../../assets/images/eco-logo.png'
 import { Container, Row } from 'reactstrap'
@@ -24,6 +24,8 @@ const nav_links = [
 const Header = () => {
   const headerRef = useRef(null)
 
+  const menuRef = useRef(null)
+
   const stickyHeader = () => {
     window.addEventListener('scroll', () => {
       if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
@@ -42,7 +44,7 @@ const Header = () => {
     
   })
 
-
+  const menuToggle = () => menuRef.current.classList.toggle('active_menu')
 
   return <header className="header" ref={headerRef}>
     <Container>
@@ -55,7 +57,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="navigation">
+          <div className="navigation" ref={menuRef} onClick={menuToggle}>
             <ul className="menu">
               {
                 nav_links.map((item,index)=>(
@@ -80,11 +82,10 @@ const Header = () => {
             <span>
               <motion.img whileTap={{scale:1.2}} src={userIcon} alt="" />
             </span>
+            <div className="mobile_menu">
+            <span onClick={menuToggle}><i class="ri-menu-line"></i></span>
           </div>
-          <div className="mobile_menu">
-            <span><i class="ri-menu-line"></i></span>
           </div>
-
         </div>
       </Row>
     </Container>
