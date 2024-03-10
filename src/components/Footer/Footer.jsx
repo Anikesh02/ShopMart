@@ -55,7 +55,6 @@ const Footer = () => {
                 <ListGroupItem className='ps-0 border-0  d-flex align-items-center gap-2'><span><i class="ri-map-pin-line"></i></span><p>301, Kitkat Nagar, India</p></ListGroupItem>
                 <ListGroupItem className='ps-0 border-0  d-flex align-items-center gap-2'><span><i class="ri-phone-line"></i></span><p>+917400115591</p></ListGroupItem>
                 <ListGroupItem className='ps-0 border-0  d-flex align-items-center gap-2'><span><i class="ri-mail-line"></i></span><p>anikeshkulal@gmail.com</p></ListGroupItem>
-                
               </ListGroup>
             </div>
           </Col>
