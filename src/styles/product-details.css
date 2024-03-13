@@ -1,0 +1,101 @@
+
+
+.product_details{
+    margin-top: 70px;
+}
+
+.product_details h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.product_rating span i{
+    color: coral;
+}
+
+.product_rating p span{
+    color: coral;
+    font-weight: 500;
+}
+
+.product_price{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.tab_wrapper {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.active_tab{
+    font-weight: 600;
+}
+
+.tab_content p{
+    line-height: 30px;
+}
+
+
+.review_wrapper ul li span{
+    color: coral;
+    font-weight: 600;
+}
+
+.review_wrapper ul li p{
+    margin-top: 10px;
+}
+
+.review_form {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+review_form h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form_group input, .form_group textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.form_group input:focus, .form_group textarea:focus{
+    outline: none;
+}
+
+.form_group{
+    margin-bottom: 30px;
+}
+
+.form_group span{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: coral;
+    font-weight: 600;
+}
+
+.related_title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .product_details h2{
+        font-size: 1.3rem;
+    }
+
+    .rating_group{
+        column-gap: 1rem !important;
+    }
+
+    
+}
