@@ -78,10 +78,36 @@
     z-index: 10;
 }
 
-.nav_icons span img{
+.nav_icons .profile img{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav_icons .profile{
+    position: relative;
+    z-index: 9;
+}
+
+.nav_icons .profile .profile_actions{
+    position: absolute;
+    top: 98%;
+    left: 0;
+    width: 150px;
+    z-index: 10;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--card-bg-01);
+    line-height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.show_profileActions {
+    display: block !important;
 }
 
 .mobile_menu{
