@@ -55,7 +55,6 @@ const Checkout = () => {
                 <h6>Total Qty: <span>{totalQty} items</span></h6>
                 <h6>Subtotal: <span>$ {totalAmount}</span></h6>
                 <h6><span>Shipping: <br />free shipping</span><span>$ 0</span></h6>
-               
                 <h4>Total Cost: <span>$ {totalAmount}</span></h4>
               <button className="buy_btn auth_btn w-100">
                 Place an Order
