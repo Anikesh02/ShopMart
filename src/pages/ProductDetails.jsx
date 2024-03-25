@@ -99,7 +99,7 @@ const ProductDetails = () => {
 
                 <div className='d-flex align-items-center gap-5'>
                 <span className='product_price'>${price}</span>
-                <span>Category: {category.toUpperCase()}</span>
+                <span>Category: {category}</span>
                 </div>
                 <p className='mt-3'>{shortDesc}</p>
                 <motion.button whileTap={{scale: 1.2 }} className="buy_btn" onClick={addToCart}>Add to Cart</motion.button>
