@@ -1,9 +1,10 @@
+import { deleteDoc, doc } from 'firebase/firestore'
 import React from 'react'
-import {Container, Row, Col} from 'reactstrap'
+import { toast } from 'react-toastify'
+import { Col, Container, Row } from 'reactstrap'
+import Helmet from '../components/Helmet/Helmet'
 import useGetData from '../custom-hooks/useGetData'
 import { db } from '../firebase.config'
-import { doc, deleteDoc } from 'firebase/firestore'
-import {toast} from 'react-toastify'
 
 
 const AllProducts = () => {
@@ -18,6 +19,7 @@ const AllProducts = () => {
   }
 
   return (
+    <Helmet title="All Products">
     <section>
       <Container>
         <Row>
@@ -56,6 +58,7 @@ const AllProducts = () => {
         </Row>
       </Container>
     </section>
+    </Helmet>
   )
 }
 

@@ -4,6 +4,7 @@ import useGetData from '../custom-hooks/useGetData'
 import { deleteDoc, doc } from 'firebase/firestore'
 import { db } from '../firebase.config'
 import {toast} from 'react-toastify'
+import Helmet from '../components/Helmet/Helmet'
 
 const Users = () => {
 
@@ -19,6 +20,7 @@ const Users = () => {
     }
 
   return (
+    <Helmet title="Users">
     <section>
         <Container>
             <Row>
@@ -51,6 +53,7 @@ const Users = () => {
             </Row>
         </Container>
     </section>
+    </Helmet>
   )
 }
 

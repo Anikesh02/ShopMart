@@ -6,12 +6,12 @@ import {getStorage} from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuiVpPky5vCZrk3sRyspAOvXOVix9mIhE",
-  authDomain: "shopmart-63dec.firebaseapp.com",
-  projectId: "shopmart-63dec",
-  storageBucket: "shopmart-63dec.appspot.com",
-  messagingSenderId: "166965061702",
-  appId: "1:166965061702:web:40f2dd2ddebdf3272ec247"
+  apiKey: "AIzaSyCEvyur7XjTbDWkUlYwrlVtXMaNcL0-tZQ",
+  authDomain: "shopmartnew-9631b.firebaseapp.com",
+  projectId: "shopmartnew-9631b",
+  storageBucket: "shopmartnew-9631b.appspot.com",
+  messagingSenderId: "370438331439",
+  appId: "1:370438331439:web:d974f202db380b2bfbbada"
 };
 
 // Initialize Firebase

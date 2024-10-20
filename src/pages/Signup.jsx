@@ -54,7 +54,7 @@ const Signup = () => {
       })
       setLoading(false)
       toast.success('Signup successful')
-      navigate('/login')
+      navigate('/home')
       console.log(user)
     }
     catch (error) {

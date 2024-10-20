@@ -1,13 +1,17 @@
 import React from 'react'
-import {Container, Row, Col} from 'reactstrap'
+import { Link, NavLink } from 'react-router-dom'
+import { Container, Row } from 'reactstrap'
 import useAuth from '../custom-hooks/useAuth'
 import '../styles/admin-nav.css'
-import { NavLink } from 'react-router-dom'
 
 const admin_nav = [
   {
     display:'Dashboard',
     path:'/dashboard'
+  },
+  {
+    display:'Add-Product',
+    path: '/dashboard/add-product'
   },
   {
     display:'All-Products',
@@ -16,11 +20,11 @@ const admin_nav = [
   {
     display:'Orders',
     path:'/dashboard/orders'
-  }, 
+  },
   {
     display:'Users',
     path:'/dashboard/users'
-  },
+  }
 ]
 
 const AdminNav = () => {
@@ -33,7 +37,7 @@ const AdminNav = () => {
         <Container>
           <div className='admin_nav-wrapper-top'>
             <div className='logo'>
-              <h2>ShopMart</h2>
+              <h2><Link to = '/home'>ShopMart</Link></h2>
             </div>
 
             <div className="search_box">
@@ -41,8 +45,8 @@ const AdminNav = () => {
               <span><i class="ri-search-line"></i></span>
             </div>
             <div className="admin_nav-top-right">
-              <span><i class="ri-notification-3-line"></i></span>
-              <span><i class="ri-settings-2-line"></i></span>
+              <Link to='/home' className='text-white'>Home</Link>
+
               <img src={ currentUser && currentUser.photoURL} alt="" />
             </div>
           </div>

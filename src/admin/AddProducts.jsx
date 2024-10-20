@@ -6,6 +6,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage'
 import { collection, addDoc } from 'firebase/firestore'
 
 import { useNavigate } from 'react-router-dom'
+import Helmet from '../components/Helmet/Helmet'
 
 const AddProducts = () => {
 
@@ -65,6 +66,7 @@ const AddProducts = () => {
   }
 
   return (
+    <Helmet title="Add Products">
     <section>
       <Container>
         <Row>
@@ -117,6 +119,7 @@ const AddProducts = () => {
         </Row>
       </Container>
     </section>
+    </Helmet>
   )
 }
 

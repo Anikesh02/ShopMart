@@ -1,16 +1,16 @@
 import React from 'react'
-import {Container, Row, Col} from 'reactstrap'
-import '../styles/dashboard.css'
+import { Col, Container, Row } from 'reactstrap'
+import Helmet from '../components/Helmet/Helmet'
 import useGetData from '../custom-hooks/useGetData'
+import '../styles/dashboard.css'
 
 const Dashboard = () => {
 
   const {data: products} = useGetData('products')
   const {data: users} = useGetData('users')
 
-
-
   return (
+    <Helmet title="Dashboard">
     <section>
       <Container>
         <Row>
@@ -41,6 +41,7 @@ const Dashboard = () => {
         </Row>
       </Container>
     </section>
+    </Helmet>
   )
 }
 
